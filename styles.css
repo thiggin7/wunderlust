@@ -1011,9 +1011,9 @@ footer a {
 }
 
 /*Large screen*/
-@media screen and (min-width: 882px){
+@media screen and (min-width: 922px){
   body, nav {
-    width: 882px;
+    width: 1028px;
 }
 
   /*Header section*/
@@ -1048,7 +1048,7 @@ footer a {
   ul {
       float: right;
       margin-top: -156px;
-      margin-left: -137px;
+      margin-right: -498px;
   }
   
   nav a {
@@ -1059,34 +1059,37 @@ footer a {
     font-size: 6px;
   } 
 
-  /*Intro*/ /*EDIT INTRO SECTION INTO GRIDS!*/
- /*
+  /*Intro*/ 
+
   #intro {
-  padding-top: 50px;
-  display: grid;
-grid-template-columns: repeat(1, 1fr);
- }
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 
- #intro h2 {
-  font-size: 2em;
- }
+  #intro h2, #intro p {
+    grid-column: 1;
+    margin-top: 10px;
+  }
 
- #intro p {
-  font-size: 0.2em;
- }*/
+  #intro p {
+    margin-top: -20px;
+  }
+
+  #img-grid {
+    grid-column: 2;
+    margin-top: -125px;
+  }
 
  /*Plan your trip section*/
  #plan div {
   display: flex;
-  padding-left: 50px;
-  padding-right: 50px;
 }
 
 #plan h3 {
   font-size: 2em;
 }
 
-/*Testimonial section*/
+/*Plan your trip section*/
 
 #plan h4 {
   font-size: 0.95em;
@@ -1134,8 +1137,77 @@ grid-template-columns: repeat(1, 1fr);
   width: 50%;
 }
 
+/*About section*/
+#about div {
+  display: flex;
+  justify-content: center;
+  align-items: ;
+}
+
+#about img {
+  width: 55%;
+}
+
+#about section {
+  padding: 15px;
+}
+
 /*Contact section*/
 
+form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100px 100px 100px
+}
+
+form {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 50px;
+}
+
+#contact h3 {
+  font-size: 2.5em;
+  margin-left: 50px;
+}
+
+#email, #phone {
+  width: 270px;
+  margin-left: 170px;
+  padding: 10px;
+}
+
+/*#phone*/
+
+
+/* #lName, #fName */
+
+
+  /*Shorten dropdown boxes*/
+  select {
+    width: 278px;
+    padding: 10px;
+    margin-right: 90px;
+  }
+  
+  input[type=submit] {
+    width: 50%;
+    margin-left: 70px;
+  }
+  
+  input[type="radio"] {
+    color: var(--purple);
+    width: 2.5em; /*Width for circle border*/
+    height: 2.5em; /*Height for circle border*/
+    place-content: center;
+    margin-right: 320px; 
+  }
+  
+  /*Color inside radio button*/
+  input[type="radio"]:checked::before {
+    transform: scale(2);
+  }
 
 /*Footer section*/
 footer p {
