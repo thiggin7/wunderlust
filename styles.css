@@ -1039,8 +1039,8 @@ footer a {
 
   header p {
     width: 100%;
-    margin-left: 160px;
-    margin-top: -10px;
+    margin-left: 220px;
+    margin-top: -30px;
     font-size: 1.1em;
   }
   
@@ -1048,7 +1048,7 @@ footer a {
   ul {
       float: right;
       margin-top: -156px;
-      margin-right: -498px;
+      margin-right: -677px;
   }
   
   nav a {
@@ -1222,6 +1222,11 @@ fieldset legend {
 
 /*Footer section*/
 footer p {
-  margin-right: 190px;
+  margin-right: 300px;
 }
+
+footer a {
+  margin-left: 100px;
+}
+
 }
