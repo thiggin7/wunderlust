@@ -608,24 +608,24 @@ h4, p, q, small, nav, button, form {
   /*Contact Us*/
 
 #contact {
-background-color: var(--white);
-padding-bottom: 30px;
-padding-top: 10px;
+  background-color: var(--white);
+  padding-bottom: 30px;
+  padding-top: 10px;
 }
 
 #contact h3 {
-font-size: 3em;
-margin-left: 50px;
+  font-size: 3em;
+  margin-left: 50px;
 }
 
 #contact .form-required {
-font-family: var(--mont);
-      font-weight: 300;
-      font-size: 0.35em;
+  font-family: var(--mont);
+  font-weight: 300;
+  font-size: 0.35em;
   }
 
   form {
-    width:50%;
+    width:65%;
     margin-left:auto;
     margin-right:auto;
   }
@@ -638,9 +638,6 @@ form div {
   margin-bottom: 20px;
 }
 
-/*label #phone {
-  margin-bottom: 30px;
-}*/
 #names, #email {
   display: grid;
 }
@@ -676,7 +673,7 @@ input, select, fieldset {
 
 /*Lengthen dropdown boxes*/
 select {
-  width: 300px;
+  width: 370px;
 }
 
 /*dropdown arrow*/
@@ -687,7 +684,6 @@ cursor: pointer;
 background-image:url("images/dropdown-arrow.png");
 background-repeat: no-repeat;
 background-position: left 100% bottom 50%;
-/*background-position: left 55% bottom 45%;*/
 background-size: 25%;
 }
 
@@ -941,4 +937,65 @@ picture {
 #about section {
   padding: 15px;
 }
+
+/*Contact section*/
+
+form {
+  width: 80%;
+  padding-right: 40px;
+}
+
+  
+  /*Lengthen dropdown boxes*/
+  select {
+    width: 598px;
+  }
+  
+  /*dropdown arrow*/
+  select {
+  /*Remove default dropdown arrow*/
+  appearance: none;
+  cursor: pointer;
+  background-image:url("images/dropdown-arrow.png");
+  background-repeat: no-repeat;
+  background-position: left 100% bottom 50%;
+  background-size: 25%;
+  }
+  
+  fieldset{
+    border: none;
+    display: flex;
+  }
+
+  fieldset label {
+   display: flex;
+  }
+  
+  input[type=submit] {
+    width: 50%;
+    margin-left: 320px;
+  }
+  
+  input[type="radio"] {
+    width: 5em; /*Width for circle border*/
+    height: 5em; /*Height for circle border*/
+    place-content: center;
+    margin-left: 0px; 
+  }
+  
+  /*Color inside radio button*/
+  input[type="radio"]:checked::before {
+    transform: scale(5);
+  }
+  
+
+  /*Radio button text*/
+  .radio-label {
+  margin-left: 80px;
+  margin-top: 40px;
+  text-transform: capitalize;
+  font-weight: 300;
+  font-size: 1.2em;
+  }
+  
 }
