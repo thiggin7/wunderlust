@@ -1179,6 +1179,7 @@ form {
  #lName, #fName{
   padding: 15px;
   width: 325px;
+  margin-top: 5px;
 }
 
 fieldset legend {
