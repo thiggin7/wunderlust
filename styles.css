@@ -1171,42 +1171,54 @@ form {
 }
 
 #email, #phone {
-  width: 92%;
+  width: 90%;
   margin-left: 0px;
-  padding: 10px;
+  padding: 15px;
 }
 
  #lName, #fName{
-  padding: 10px;
-  width: 278px;
+  padding: 15px;
+  width: 325px;
 }
 
+fieldset legend {
+  margin-left: -20px;
+  margin-bottom: -15px;
+}
 
   /*Shorten dropdown boxes*/
   select {
     width: 278px;
-    padding: 10px;
+    padding: 13px;
     margin-right: 90px;
+    margin-top: 19px;
   }
-  
+
   input[type=submit] {
     width: 50%;
     margin-left: 93px;
     padding: 15px;
+    margin-top: 25px;
   }
   
   input[type="radio"] {
     color: var(--purple);
-    width: 2.5em; /*Width for circle border*/
-    height: 2.5em; /*Height for circle border*/
+    width: 3em; /*Width for circle border*/
+    height: 3em; /*Height for circle border*/
     place-content: center;
-    margin-right: 320px; 
+    margin-right: 300px; 
+    margin-top: 8px;
   }
   
   /*Color inside radio button*/
   input[type="radio"]:checked::before {
-    transform: scale(2);
+    transform: scale(3);
   }
+
+  .radio-label {
+    margin-top: 15px;
+    font-size: 1em;
+    }
 
 /*Footer section*/
 footer p {
