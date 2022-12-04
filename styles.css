@@ -1013,7 +1013,7 @@ footer a {
 /*Large screen*/
 @media screen and (min-width: 922px){
   body, nav {
-    width: 1028px;
+    width: 1208px;
 }
 
   /*Header section*/
@@ -1157,31 +1157,29 @@ footer a {
 form {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 100px 100px 100px
+  grid-template-rows: 100px 100px 100px;
 }
 
 form {
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
   padding-left: 50px;
 }
 
 #contact h3 {
   font-size: 2.5em;
-  margin-left: 50px;
+  padding-left: 0px;
 }
 
 #email, #phone {
-  width: 270px;
-  margin-left: 170px;
+  width: 92%;
+  margin-left: 0px;
   padding: 10px;
 }
 
-/*#phone*/
-
-
-/* #lName, #fName */
+ #lName, #fName{
+  padding: 10px;
+  width: 278px;
+}
 
 
   /*Shorten dropdown boxes*/
@@ -1193,7 +1191,8 @@ form {
   
   input[type=submit] {
     width: 50%;
-    margin-left: 70px;
+    margin-left: 93px;
+    padding: 15px;
   }
   
   input[type="radio"] {
