@@ -196,6 +196,8 @@ template {
 	display: none;
 }
 /*Normalize ends*/
+
+/*Small screen / global styles*/
 @import url('https://fonts.googleapis.com/css2?family=Molle&family=Montserrat&display=swap');
 :root {
 	--yellow: #F6D64A;
