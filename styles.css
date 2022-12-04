@@ -720,8 +720,8 @@ input[type="radio"] {
   appearance: none;
   background-color: var(--white); /*Background color for inside of button*/
   color: var(--purple);
-  width: 7em; /*WIDTH FOR CIRCLE BORDER*/
-  height: 7em; /*HEIGHT FOR CIRCLE BORDER*/
+  width: 7em; /*Width for circle border*/
+  height: 7em; /*Height for circle border*/
   border: 0.15em solid currentColor;
   border-radius: 50%;
   transform: translateY(-0.075em);
@@ -749,7 +749,7 @@ input[type="radio"]:checked::before {
 
 /*Radio button outline*/
 input[type="radio"]:focus {
-  outline: max(2px) solid var(--purple);;
+  outline: max(2px) solid var(--purple);
 }
 
 /*Radio button text*/
@@ -807,6 +807,7 @@ header p {
   width: 55%;
   margin-right: 50px;
   margin-left: 50px;
+  margin-top: -5px;
 }
 
 /*Nav section*/
@@ -892,7 +893,6 @@ picture {
   padding-bottom: 30px;
 }
 /*Testimonial section*/
-/*Testamonials*/
 #testimonials {
   display: grid;
   text-align: center;
@@ -975,7 +975,7 @@ form {
     width: 5em; /*Width for circle border*/
     height: 5em; /*Height for circle border*/
     place-content: center;
-    margin-right: 80px; 
+    margin-right: 320px; 
   }
   
   /*Color inside radio button*/
@@ -986,11 +986,12 @@ form {
   
   /*Radio button text*/
   .radio-label {
-  margin-left: 0px;
+  margin-left: -300px;
   margin-top: 40px;
   text-transform: capitalize;
   font-weight: 300;
   font-size: 1.2em;
+  padding-right: 60px;
   }
   
 }
